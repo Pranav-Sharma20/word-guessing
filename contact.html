@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Guess the word </title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <nav class="navbar">
+                <div class="ham">
+                    <input type="checkbox">
+                    <div class="l-ham">
+                        <span class="line line-1"> </span>
+                        <span class="line line-2"> </span>
+                        <span class="line line-3"> </span>
+                    </div>
+                    <ul class="menu-items">
+                        <a href="./index.html">
+                            <li class="menu-item"> Home </li>
+                        </a>
+                        <a href="./about.html" target="_blank">
+                            <li class="menu-item"> About </li>
+                        </a>
+                        <a href="./contact.html" target="_blank">
+                            <li class="menu-item"> Contact us </li>
+                        </a>
+                        <a href="">
+                            <li class="menu-item"> </li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="contact container">
+        <h1 class="contact-heading"> Contact </h1>
+        <div class="c-wrap">
+            <form action="" class="contact-form">
+                <p class="c-text"> Full Name </p>
+                <input type="text" required>
+                <p class="c-text"> E-mail </p>
+                <input type="email" required>
+                <p class="c-text"> Phone no: </p>
+                <input type="text" required>
+                <p class="c-text"> Type your query: </p>
+                <textarea name="" id="" cols="50" rows="10"></textarea>
+                <button type="submit" class="submitBtn" onclick="fun1()"> Submit </button>
+            </form>
+        </div>
+	</section>
+
+    <section class="footer">
+		<p class="text"> One Blood &copy; &nbsp; | &nbsp Andy Designs &nbsp | &nbsp; All rights reserved </p>
+	</section>
+
+    <script>
+        function fun1(){
+            alert("Application submitted..!");
+        }
+    </script>
+</body>
+</html>

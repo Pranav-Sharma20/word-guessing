@@ -1,0 +1,248 @@
+@import url(./utilities.css);
+@import url(./hamburger_menu.css);
+
+/* ..................... HEADER ..................... */
+
+.header h1{
+    text-align: center;
+    color: var(--bg-white);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+/* ..................... MAIN PROJECT ..................... */
+
+.main{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 45rem;
+    padding: 0.5rem;
+    background-color: var(--bg-white);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .content {
+    margin: 2.5rem 2.5rem 3.5rem;
+}
+
+.content .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputs input {
+    height: 5.7rem;
+    width: 5.6rem;
+    margin: 0.4rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--text-green);
+    text-align: center;
+    border-radius: 0.5rem;
+    background: none;
+    pointer-events: none;
+    text-transform: uppercase;
+    border: 0.1rem solid var(--text-gray);
+}
+
+.typing-input {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+    pointer-events: none;
+}
+
+.inputs input:first-child {
+    margin-left: 0;
+}
+
+.content .details {
+    margin: 2rem 0 2.5rem;
+}
+
+.details p {
+    font-size: 1.9rem;
+    margin-bottom: 1.0rem;
+}
+
+.content .reset-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: var(--bg-white);
+    outline: none;
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-green);
+    transition: all 0.3s ease;
+}
+
+.content .reset-btn:hover {
+    background-color: var(--bg-green);
+}
+
+/* ..................... FOOTER ..................... */
+
+.footer{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.footer .text{
+    color: var(--bg-white);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ..................... ABOUT ..................... */
+
+.about{
+    color: var(--bg-white);
+    text-align: center;
+}
+
+.about-heading{
+    font-size: 6rem;
+    margin-top: 3rem;
+}
+
+.about-text1, .about-text2{
+    font-size: 1.7rem;
+    margin-top: 5rem;
+}
+
+.sec-links{
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.links  a img{
+    width: 4rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    color: var(--bg-white);
+}
+
+/* ..................... ABOUT ..................... */
+
+.contact{
+    position: relative;
+}
+
+.contact-heading{
+    font-size: 5rem;
+    color: var(--bg-white);
+    text-align: center;
+}
+
+.c-wrap{
+    width: 50rem;
+    height: 43rem;
+    border-radius: 1rem;
+    background-color: #fffef77d;
+    padding: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+}
+
+.c-wrap .contact-form input, .c-wrap .contact-form textarea{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background: transparent;
+    overflow: hidden;
+    outline: none;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.c-wrap .contact-form textarea{
+    height: 7rem;
+}
+
+.c-wrap .contact-form p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.c-wrap .contact-form button{
+    border: none;
+    width: 9rem;
+    height: 4rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+}
+
+/* ..................... MEDIA QUERIES ..................... */
+
+@media screen and (max-width: 460px) {
+    .main{
+        margin-top: 6rem;
+    }
+
+    .wrapper {
+        padding: 0;
+        width: 100%;
+    }
+
+    .wrapper h1 {
+        font-size: 2.2rem;
+        padding: 1.6rem 2.0rem;
+    }
+
+    .wrapper .content {
+        margin: 2.5rem 2.0rem 3.5rem;
+    }
+
+    .inputs input {
+        height: 5.1rem;
+        width: 5.0rem;
+        margin: 0.3rem;
+        font-size: 2.2rem;
+    }
+
+    .details p {
+        font-size: 1.7rem;
+    }
+
+    .content .reset-btn {
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+    }
+
+    .footer{
+        margin-top: 9rem;
+    }
+
+    .footer .text{
+        color: var(--bg-white);
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .about{
+        height: 50rem;
+    }
+
+    .c-wrap{
+        width: 30rem;
+        height: 45rem;    
+    }
+}
